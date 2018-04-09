@@ -3,7 +3,7 @@ import { Link, hashHistory } from 'react-router'
 import connect from '../Helpers/connect'
 import * as Search from '../../Actions/Search'
 import { setSystemError } from '../../Actions/Core'
- 
+
 import Spinner from '../../Elements/Spinner'
 import OnlyIf from '../../Elements/OnlyIf'
 import StatusIndicator from '../../Elements/StatusIndicator'
@@ -169,11 +169,6 @@ class TopNavbar extends Component {
               onKeyPress={this.handleSearchKeyPress}
             />
             <SearchIcon />
-          </div>
-          <div className="Menu">
-            <Link to="config" activeClassName="Active">
-              <SettingsIcon />
-            </Link>
           </div>
         </main>
         <section className="StatusAndControls">

@@ -21,6 +21,7 @@ class AppShell extends Component {
   }
 
   _setupGoogleAnalytics = () => {
+    /*
     ReactGA.initialize('UA-83874933-5', {
       gaOptions: {
         clientId: this.props.settings.uuid
@@ -52,6 +53,7 @@ class AppShell extends Component {
     }
 
     ReactGA.pageview('/')
+    */
   }
 
   _handleScroll = () => {
@@ -101,9 +103,10 @@ class AppShell extends Component {
     }
 
     const segment = nextProps.location.pathname.split('/')[1] || 'dashboard'
-
+    /*
     ReactGA.pageview(nextProps.location.pathname)
     ReactGA.send('screenview', { screenName: segment, appName: 'Ganache', appVersion: app.getVersion() })
+    */
   }
 
   onCloseFatalErrorModal = () => {}

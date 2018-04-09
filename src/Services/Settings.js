@@ -21,10 +21,10 @@ if (process.env.ELECTRON) {
 const oldDefaultMnemonic =  "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
 
 const initialSettings = {
-  googleAnalyticsTracking: true,
+  googleAnalyticsTracking: false,
   cpuAndMemoryProfiling: false,
   verboseLogging: false,
-  firstRun: true,
+  firstRun: false,
   randomizeMnemonicOnStart: false,
   maxActionHistoryPerType: 250,
   server: {

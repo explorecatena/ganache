@@ -185,7 +185,7 @@ class TopNavbar extends Component {
             />
             <StatusIndicator
               title="RPC SERVER"
-              value={`http://${window.location.hostname}:${currentSettings.server.port}`}
+              value={`http://${window.location.hostname}:${this.props.settings.server.port}`}
             />
             <StatusIndicator
               title="MINING STATUS"

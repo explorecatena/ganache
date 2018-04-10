@@ -28,7 +28,7 @@ const initialSettings = {
   randomizeMnemonicOnStart: false,
   maxActionHistoryPerType: 250,
   server: {
-    hostname: "127.0.0.1",
+    hostname: '0.0.0.0',
     port: 7545,
     network_id: 5777,
     total_accounts: 10,

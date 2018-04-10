@@ -26,7 +26,7 @@ export default function (store) {
     store.dispatch(Settings.setSettings(currentSettings))
 
     // Ensure web3 is set
-    store.dispatch(Web3.setRPCProviderUrl(`ws://${window.location.hostname}/web3`))
+    store.dispatch(Web3.setRPCProviderUrl(`http://${window.location.host}/web3`))
 
     store.dispatch(Accounts.getAccounts())
     store.dispatch(Core.getGasPrice())
